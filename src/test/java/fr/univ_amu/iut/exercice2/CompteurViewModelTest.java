@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
  */
 class CompteurViewModelTest {
 
-  @Disabled("Retire cette annotation pour activer le test")
+  
   @Test
   void au_demarrage_le_message_affiche_zero() {
     CompteurViewModel vm = new CompteurViewModel(new Compteur());
@@ -21,7 +21,7 @@ class CompteurViewModelTest {
         .isEqualTo("Compteur à 0");
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
+  
   @Test
   void incrementer_augmente_le_compteur_de_un() {
     CompteurViewModel vm = new CompteurViewModel(new Compteur());
@@ -31,7 +31,7 @@ class CompteurViewModelTest {
     assertThat(vm.messageProperty().get()).isEqualTo("Compteur à 1");
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
+ 
   @Test
   void plusieurs_increments_se_cumulent() {
     CompteurViewModel vm = new CompteurViewModel(new Compteur());
@@ -43,7 +43,7 @@ class CompteurViewModelTest {
     assertThat(vm.messageProperty().get()).isEqualTo("Compteur à 3");
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
+  
   @Test
   void decrementer_diminue_le_compteur() {
     CompteurViewModel vm = new CompteurViewModel(new Compteur());
@@ -55,7 +55,7 @@ class CompteurViewModelTest {
     assertThat(vm.messageProperty().get()).isEqualTo("Compteur à -1");
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
+  
   @Test
   void reinitialiser_remet_le_compteur_a_zero() {
     CompteurViewModel vm = new CompteurViewModel(new Compteur());

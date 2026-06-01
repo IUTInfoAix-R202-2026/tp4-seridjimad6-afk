@@ -20,7 +20,7 @@ import org.testfx.framework.junit5.Start;
  * <p>On déclenche les boutons via {@code fire()} (et non un clic souris simulé) : c'est la méthode
  * fiable en environnement sans portail d'entrée (Codespace, CI), et c'est aussi instantané.
  */
-@ExtendWith(ApplicationExtension.class)
+@ExtendWith(ApplicationExtension.class) 
 class CompteurControllerTest {
 
   @Start
@@ -36,7 +36,7 @@ class CompteurControllerTest {
     return robot.lookup(texte).queryButton();
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
+  
   @Test
   void au_demarrage_le_label_affiche_zero(FxRobot robot) {
     assertThat(label(robot).getText())
@@ -44,7 +44,7 @@ class CompteurControllerTest {
         .isEqualTo("Compteur à 0");
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
+  
   @Test
   void cliquer_sur_plus_incremente_le_label(FxRobot robot) {
     robot.interact(() -> bouton(robot, "+").fire());
@@ -53,7 +53,7 @@ class CompteurControllerTest {
         .isEqualTo("Compteur à 1");
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
+  
   @Test
   void cliquer_sur_moins_decremente_le_label(FxRobot robot) {
     robot.interact(() -> bouton(robot, "−").fire());
@@ -62,7 +62,7 @@ class CompteurControllerTest {
         .isEqualTo("Compteur à -1");
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
+  
   @Test
   void cliquer_sur_reinitialiser_remet_a_zero(FxRobot robot) {
     robot.interact(() -> bouton(robot, "+").fire());

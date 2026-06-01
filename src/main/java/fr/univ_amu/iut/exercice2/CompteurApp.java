@@ -24,7 +24,7 @@ public class CompteurApp extends Application {
     Parent racine = loader.load();
 
     stage.setTitle("Exercice 2 - Compteur MVVM");
-    stage.setScene(new Scene(racine));
+    stage.setScene(new Scene(racine)); 
     stage.show();
   }
 
