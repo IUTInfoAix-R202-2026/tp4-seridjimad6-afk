@@ -13,8 +13,10 @@ import org.testfx.framework.junit5.ApplicationExtension;
 import org.testfx.framework.junit5.Start;
 
 /**
- * Test de l'exercice 1, côté vue (TestFX) : on vérifie que le contrôleur câble bien le champ de
- * saisie et le label d'aperçu sur le ViewModel. La logique est déjà couverte sans fenêtre par
+ * Test de l'exercice 1, côté vue (TestFX) : on vérifie que le contrôleur câble
+ * bien le champ de
+ * saisie et le label d'aperçu sur le ViewModel. La logique est déjà couverte
+ * sans fenêtre par
  * {@link MessageViewModelTest} ; ici on ne teste QUE le branchement de la vue.
  */
 @ExtendWith(ApplicationExtension.class)
@@ -25,7 +27,6 @@ class MessageControllerTest {
     new MessageApp().start(stage);
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void au_demarrage_l_apercu_reflete_le_texte_initial(FxRobot robot) {
     Label apercu = robot.lookup("#labelApercu").queryAs(Label.class);
@@ -34,7 +35,6 @@ class MessageControllerTest {
         .isEqualTo("Aperçu : Bonjour MVVM");
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   void saisir_dans_le_champ_met_a_jour_l_apercu(FxRobot robot) {
     TextField champ = robot.lookup("#champTexte").queryAs(TextField.class);
