@@ -11,6 +11,6 @@ public class ServiceAuthSimple implements ServiceAuth {
 
   @Override
   public boolean connecter(String identifiant, String motDePasse) {
-    return "marie".equals(identifiant) && "chiro2026".equals(motDePasse);
+    return "marie".equals(identifiant) && "chiro2026".equals(motDePasse); 
   }
 }
