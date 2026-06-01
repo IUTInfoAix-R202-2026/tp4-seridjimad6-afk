@@ -24,3 +24,4 @@ public class Message {
     this.texte = texte;
   }
 }
+ 

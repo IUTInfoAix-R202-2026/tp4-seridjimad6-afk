@@ -24,5 +24,6 @@ public class AppModule extends AbstractModule {
     // Objectif : quand une classe demande un ServiceAuth (via @Inject), Guice
     // doit fournir une instance de ServiceAuthSimple.
     // Astuce : bind(ServiceAuth.class).to(ServiceAuthSimple.class);
+    bind(ServiceAuth.class).to()
   }
 }
