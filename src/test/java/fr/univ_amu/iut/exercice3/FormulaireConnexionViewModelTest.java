@@ -14,7 +14,7 @@ import org.junit.jupiter.api.Test;
  */
 class FormulaireConnexionViewModelTest {
 
-  @Disabled("Retire cette annotation pour activer le test")
+  
   @Test
   void le_formulaire_n_est_pas_validable_au_demarrage() {
     FormulaireConnexionViewModel vm =
@@ -22,10 +22,10 @@ class FormulaireConnexionViewModelTest {
 
     assertThat(vm.validableProperty().get())
         .as("les deux champs sont vides : le formulaire ne doit pas être validable")
-        .isFalse();
+        .isFalse(); 
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
+  
   @Test
   void le_formulaire_devient_validable_quand_les_deux_champs_sont_remplis() {
     FormulaireConnexionViewModel vm =
@@ -40,7 +40,7 @@ class FormulaireConnexionViewModelTest {
         .isTrue();
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
+  
   @Test
   void une_connexion_reussie_affiche_un_message_de_bienvenue() {
     FormulaireConnexionViewModel vm =
@@ -53,7 +53,7 @@ class FormulaireConnexionViewModelTest {
     assertThat(vm.statutProperty().get()).isEqualTo("Bienvenue marie !");
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
+  
   @Test
   void une_connexion_refusee_affiche_un_message_d_erreur() {
     FormulaireConnexionViewModel vm =
@@ -68,7 +68,7 @@ class FormulaireConnexionViewModelTest {
         .isEqualTo("Identifiants incorrects. Vérifiez votre saisie.");
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
+  
   @Test
   void le_service_simple_reconnait_le_compte_de_demonstration() {
     ServiceAuth service = new ServiceAuthSimple();

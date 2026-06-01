@@ -8,7 +8,7 @@ package fr.univ_amu.iut.exercice3;
  * on pourra fournir une vraie implémentation en production, et un faux service (mock) dans les
  * tests, sans changer une ligne du ViewModel.
  */
-public interface ServiceAuth {
+public interface ServiceAuth { 
 
   /**
    * Tente d'authentifier un utilisateur.

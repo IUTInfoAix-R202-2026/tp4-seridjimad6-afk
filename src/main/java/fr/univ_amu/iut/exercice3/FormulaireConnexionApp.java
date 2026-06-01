@@ -25,7 +25,7 @@ public class FormulaireConnexionApp extends Application {
     Parent racine = loader.load();
 
     stage.setTitle("Exercice 3 - Formulaire MVVM");
-    stage.setScene(new Scene(racine));
+    stage.setScene(new Scene(racine)); 
     stage.show();
   }
 
