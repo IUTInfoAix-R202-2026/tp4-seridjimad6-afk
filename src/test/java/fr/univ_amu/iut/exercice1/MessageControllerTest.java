@@ -5,7 +5,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.api.FxRobot;
@@ -13,10 +12,8 @@ import org.testfx.framework.junit5.ApplicationExtension;
 import org.testfx.framework.junit5.Start;
 
 /**
- * Test de l'exercice 1, côté vue (TestFX) : on vérifie que le contrôleur câble
- * bien le champ de
- * saisie et le label d'aperçu sur le ViewModel. La logique est déjà couverte
- * sans fenêtre par
+ * Test de l'exercice 1, côté vue (TestFX) : on vérifie que le contrôleur câble bien le champ de
+ * saisie et le label d'aperçu sur le ViewModel. La logique est déjà couverte sans fenêtre par
  * {@link MessageViewModelTest} ; ici on ne teste QUE le branchement de la vue.
  */
 @ExtendWith(ApplicationExtension.class)
