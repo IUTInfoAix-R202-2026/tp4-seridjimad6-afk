@@ -6,20 +6,15 @@ import javafx.scene.control.Label;
 /**
  * Contrôleur de vue de l'exercice 2.
  *
- * <p>
- * Encore une fois, le contrôleur est un simple câblage : il lie le label au
- * {@code message} du
- * ViewModel, et fait suivre les clics de boutons vers les commandes
- * correspondantes. Aucune logique
- * ici : le "quoi faire" vit dans le ViewModel, le "comment l'afficher" dans le
- * FXML.
+ * <p>Encore une fois, le contrôleur est un simple câblage : il lie le label au {@code message} du
+ * ViewModel, et fait suivre les clics de boutons vers les commandes correspondantes. Aucune logique
+ * ici : le "quoi faire" vit dans le ViewModel, le "comment l'afficher" dans le FXML.
  */
 public class CompteurController {
 
   private final CompteurViewModel viewModel;
 
-  @FXML
-  private Label labelCompteur;
+  @FXML private Label labelCompteur;
 
   public CompteurController(CompteurViewModel viewModel) {
     this.viewModel = viewModel;

@@ -18,9 +18,7 @@ public class FormulaireConnexionViewModel {
     this.serviceAuth = serviceAuth;
 
     // Formulaire valide uniquement si les deux champs sont remplis
-    validable.bind(
-        identifiant.isNotEmpty()
-            .and(motDePasse.isNotEmpty()));
+    validable.bind(identifiant.isNotEmpty().and(motDePasse.isNotEmpty()));
   }
 
   public StringProperty identifiantProperty() {
@@ -39,9 +37,7 @@ public class FormulaireConnexionViewModel {
     return validable;
   }
 
-  /**
-   * Commande de connexion.
-   */
+  /** Commande de connexion. */
   public void connecterCommand() {
     // 1. Afficher l'état en cours
     statut.set("Connexion en cours...");

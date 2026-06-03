@@ -7,22 +7,16 @@ import javafx.beans.property.StringProperty;
 /**
  * ViewModel de l'exercice 2.
  *
- * <p>
- * Cet exercice illustre deux idées clefs du MVVM :
+ * <p>Cet exercice illustre deux idées clefs du MVVM :
  *
  * <ol>
- * <li>une propriété d'AFFICHAGE dérivée ({@code message}) : le ViewModel
- * transforme la donnée
- * brute du modèle (un entier) en texte prêt à afficher ;
- * <li>le pattern <b>Command</b> : chaque action de l'interface (clic sur un
- * bouton) correspond à
- * une méthode publique sans paramètre du ViewModel ({@code incrementerCommand},
- * etc.).
+ *   <li>une propriété d'AFFICHAGE dérivée ({@code message}) : le ViewModel transforme la donnée
+ *       brute du modèle (un entier) en texte prêt à afficher ;
+ *   <li>le pattern <b>Command</b> : chaque action de l'interface (clic sur un bouton) correspond à
+ *       une méthode publique sans paramètre du ViewModel ({@code incrementerCommand}, etc.).
  * </ol>
  *
- * <p>
- * Le ViewModel reste testable sans interface : voir
- * {@code CompteurViewModelTest}.
+ * <p>Le ViewModel reste testable sans interface : voir {@code CompteurViewModelTest}.
  */
 public class CompteurViewModel {
 

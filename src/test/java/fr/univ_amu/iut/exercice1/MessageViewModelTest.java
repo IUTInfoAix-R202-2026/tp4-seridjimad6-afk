@@ -2,7 +2,6 @@ package fr.univ_amu.iut.exercice1;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -14,7 +13,6 @@ import org.junit.jupiter.api.Test;
  */
 class MessageViewModelTest {
 
-  
   @Test
   void au_demarrage_le_texte_reflete_la_valeur_du_modele() {
     Message modele = new Message("Bonjour MVVM");
@@ -25,7 +23,6 @@ class MessageViewModelTest {
         .isEqualTo("Bonjour MVVM");
   }
 
- 
   @Test
   void modifier_la_propriete_met_a_jour_le_modele() {
     Message modele = new Message("Bonjour MVVM");
@@ -38,7 +35,6 @@ class MessageViewModelTest {
         .isEqualTo("Chauve-souris");
   }
 
- 
   @Test
   void l_apercu_derive_automatiquement_du_texte() {
     MessageViewModel vm = new MessageViewModel(new Message(""));
